@@ -2,19 +2,23 @@
   "name": "germess",
   "version": "1.0.0",
   "description": "Messenger with eloquent UI",
-  "main": "index.js",
-  "source": "index.html",
-  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "source": "src/app/index.html",
+  "browserslist": ["> 0.5%, last 2 versions, not dead"],
   "scripts": {
-    "dev": "parcel ./src/app/index.html",
-    "build": "parcel build"
+    "dev": "parcel",
+    "build": "rm -rf ./dist && parcel build",
+    "start": "rm -rf ./dist && parcel build && node server.js"
   },
   "author": "Aleksey Piatetskyi",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.1.1"
+    "features": "^0.1.0",
+    "parcel": "^2.1.1",
+    "postcss-preset-env": "^7.2.3"
   },
   "dependencies": {
+    "dotenv": "^11.0.0",
+    "express": "^4.17.2",
     "handlebars": "^4.7.7"
   }
 }

@@ -1,0 +1,7 @@
+@import "./normalize";
+@import "./variables";
+
+body {
+  display: grid;
+  background: var(--primary);
+}
