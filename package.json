@@ -1,0 +1,20 @@
+{
+  "name": "germess",
+  "version": "1.0.0",
+  "description": "Messenger with eloquent UI",
+  "main": "index.js",
+  "source": "index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "dev": "parcel ./src/app/index.html",
+    "build": "parcel build"
+  },
+  "author": "Aleksey Piatetskyi",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.1.1"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.7"
+  }
+}
