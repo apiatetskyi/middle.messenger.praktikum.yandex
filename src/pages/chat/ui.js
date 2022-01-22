@@ -10,7 +10,7 @@ export const template = `
         </ul>
     </div>
     <div class="main__content">
-        <div class="main__message message-bar">
+        <div class="main__message">
             {{> TextField type='text' name='message' id='message' placeholder='Write a message...' }}
         </div>
     </div>

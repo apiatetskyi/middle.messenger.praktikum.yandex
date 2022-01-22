@@ -10,19 +10,17 @@ import { getCompiledTemplate, renderHtml } from "../shared/lib/render";
 import { registerTextField } from "../shared/ui/text-field";
 import { registerCard } from "../shared/ui/card";
 import { registerButton } from "../shared/ui/button";
-import { registerSignIn } from "../shared/ui/sign-in";
-import { registerSignUp } from "../shared/ui/sign-up";
+import { registerForm } from "../shared/ui/form";
 import { registerChatCard } from "../shared/ui/chat-card";
 
 registerTextField();
 registerCard();
 registerButton();
-registerSignIn();
-registerSignUp();
+registerForm();
 registerChatCard();
 
-const ROUTE_404 = "404";
-const ROUTE_500 = "500";
+const ROUTE_404 = "/404";
+const ROUTE_500 = "/500";
 const ROUTE_CHAT = "/chat";
 const ROUTE_INDEX = "/";
 const ROUTE_PROFILE = "/profile";

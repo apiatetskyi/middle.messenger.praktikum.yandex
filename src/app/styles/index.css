@@ -7,39 +7,26 @@ body {
   color: var(--main-text);
 }
 
-.main {
-  display: flex;
+.navigation {
+  max-width: 600px;
+  margin: auto;
 }
 
-.main__sidebar {
-  max-width: 400px;
-  height: 100vh;
-  overflow: hidden;
-
-  background-color: var(--light-gray);
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-.main__chat-list {
-  height: 100%;
-  overflow-y: auto;
-}
+.navigation-link {
+  font-size: 1.25rem;
+  line-height: var(--baseline);
+  text-decoration: none;
+  color: var(--primary);
 
-.main__content {
-  position: relative;
-  flex-grow: 1;
-}
-
-.main__message {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: calc(var(--baseline) * 3);
-}
-
-.message-bar {
-  padding: calc(var(--baseline) * 0.5);
-  border-top: 1px solid var(--light-gray);
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .chat-list {
@@ -50,41 +37,6 @@ body {
 
 .chat-list__item + .chat-list__item {
   margin-top: calc(var(--baseline) * 0.5);
-}
-
-.form {
-  max-width: 420px;
-  margin: auto;
-}
-
-.form--type-profile {
-  max-width: 800px;
-}
-
-.form--type-profile .form__form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: var(--baseline);
-}
-
-.form__title {
-  margin-top: 0;
-  margin-bottom: var(--baseline);
-
-  line-height: calc(var(--baseline) * 2);
-  text-align: center;
-}
-
-.form__controls {
-  display: flex;
-  align-items: center;
-  margin-top: var(--baseline);
-  gap: var(--baseline);
-}
-
-.form__button {
-  flex-grow: 1;
-  flex-basis: 0;
 }
 
 .avatar {

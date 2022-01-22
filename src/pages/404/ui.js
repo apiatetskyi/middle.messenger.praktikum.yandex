@@ -1,5 +1,6 @@
 export const template = `
-<div class="main">
+{{#> Card className='navigation' }}
     <h1>Page not found</h1>
-</div>
+    <a class="navigation-link" href="/" >Go back to main page</a>
+{{/Card}}
 `;

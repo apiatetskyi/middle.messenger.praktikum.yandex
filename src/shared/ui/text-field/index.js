@@ -3,7 +3,7 @@ import Handlebars from "handlebars";
 import "./index.css";
 
 const template = `
-<div class="text-field">
+<div class="text-field {{className}}">
     {{#if label}}
     <label
         class="text-field__label"

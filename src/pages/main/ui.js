@@ -1,11 +1,10 @@
 export const template = `
-<div class="main">
-    <h1>Index page</h1>
-
-    <ul>
+{{#> Card className='navigation' }}
+    <h1>Main templates</h1>
+    <ol class="navigation__list">
     {{#each links}}
-        <li><a href="{{this.link}}">{{this.title}}</a></li>
+        <li><a class="navigation-link" href="{{link}}">{{title}}</a></li>
     {{/each}}
     </ul>
-</div>
+{{/Card}}
 `;

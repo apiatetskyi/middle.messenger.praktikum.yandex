@@ -1,0 +1,38 @@
+.form {
+  max-width: 420px;
+  margin: auto;
+}
+
+.form--type-profile {
+  max-width: 800px;
+}
+
+.form--type-vertical .form__text-field + .form__text-field {
+  margin-top: var(--baseline);
+}
+
+.form--type-profile .form__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: var(--baseline);
+}
+
+.form__title {
+  margin-top: 0;
+  margin-bottom: var(--baseline);
+
+  line-height: calc(var(--baseline) * 2);
+  text-align: center;
+}
+
+.form__controls {
+  display: flex;
+  align-items: center;
+  margin-top: var(--baseline);
+  gap: var(--baseline);
+}
+
+.form__button {
+  flex-grow: 1;
+  flex-basis: 0;
+}
