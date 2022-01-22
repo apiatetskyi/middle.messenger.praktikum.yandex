@@ -3,11 +3,25 @@
 }
 
 .main__sidebar {
+  position: relative;
   max-width: 400px;
   height: 100vh;
   overflow: hidden;
 
   background-color: var(--light-gray);
+}
+
+.main__nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  height: calc(var(--baseline) * 3);
+
+  border-top: 1px solid var(--light-gray);
+  border-right: 1px solid var(--light-gray);
+  background-color: var(--white);
 }
 
 .main__chat-list {

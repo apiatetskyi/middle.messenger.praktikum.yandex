@@ -12,12 +12,14 @@ import { registerCard } from "../shared/ui/card";
 import { registerButton } from "../shared/ui/button";
 import { registerForm } from "../shared/ui/form";
 import { registerChatCard } from "../shared/ui/chat-card";
+import { registerChatNav } from "../shared/ui/chat-nav";
 
 registerTextField();
 registerCard();
 registerButton();
 registerForm();
 registerChatCard();
+registerChatNav();
 
 const ROUTE_404 = "/404";
 const ROUTE_500 = "/500";

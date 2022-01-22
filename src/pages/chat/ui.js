@@ -8,6 +8,8 @@ export const template = `
             </li>
             {{/each}}
         </ul>
+
+        {{> ChatNav className='main__nav'}}
     </div>
     <div class="main__content">
         <div class="main__message">
