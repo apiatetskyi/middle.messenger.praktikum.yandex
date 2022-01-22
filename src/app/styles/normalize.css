@@ -9,8 +9,16 @@
  */
 
 html {
-  line-height: 1.15; /* 1 */
+  box-sizing: border-box;
+  font-size: 87.5%;
+  line-height: 1.5; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 /* Sections

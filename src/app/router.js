@@ -7,12 +7,26 @@ import { ChatPage, ChatPageModel } from "../pages/chat";
 import { ProfilePage, ProfilePageModel } from "../pages/profile";
 import { getCompiledTemplate, renderHtml } from "../shared/lib/render";
 
+import { registerTextField } from "../shared/ui/text-field";
+import { registerCard } from "../shared/ui/card";
+import { registerButton } from "../shared/ui/button";
+import { registerSignIn } from "../shared/ui/sign-in";
+import { registerSignUp } from "../shared/ui/sign-up";
+import { registerChatCard } from "../shared/ui/chat-card";
+
+registerTextField();
+registerCard();
+registerButton();
+registerSignIn();
+registerSignUp();
+registerChatCard();
+
 const ROUTE_404 = "404";
 const ROUTE_500 = "500";
 const ROUTE_CHAT = "/chat";
 const ROUTE_INDEX = "/";
 const ROUTE_PROFILE = "/profile";
-const ROUTE_SIGN_IN = "/sing-in";
+const ROUTE_SIGN_IN = "/sign-in";
 const ROUTE_SIGN_UP = "/sign-up";
 
 const mainPageLinks = [
@@ -34,7 +48,7 @@ export const router = {
   },
 
   [ROUTE_CHAT]: {
-    template: getCompiledTemplate(ChatPage.template, {}),
+    template: getCompiledTemplate(ChatPage.template, ChatPageModel.data),
     title: ChatPageModel.PAGE_TITLE,
   },
 

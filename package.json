@@ -4,6 +4,9 @@
   "description": "Messenger with eloquent UI",
   "source": "src/app/index.html",
   "browserslist": ["> 0.5%, last 2 versions, not dead"],
+  "engines": {
+    "node": ">=12"
+  },
   "scripts": {
     "dev": "parcel",
     "build": "rm -rf ./dist && parcel build",

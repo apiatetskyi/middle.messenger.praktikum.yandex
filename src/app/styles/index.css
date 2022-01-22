@@ -2,6 +2,108 @@
 @import "./variables";
 
 body {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: var(--main-text);
+}
+
+.main {
+  display: flex;
+}
+
+.main__sidebar {
+  max-width: 400px;
+  height: 100vh;
+  overflow: hidden;
+
+  background-color: var(--light-gray);
+}
+
+.main__chat-list {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.main__content {
+  position: relative;
+  flex-grow: 1;
+}
+
+.main__message {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: calc(var(--baseline) * 3);
+}
+
+.message-bar {
+  padding: calc(var(--baseline) * 0.5);
+  border-top: 1px solid var(--light-gray);
+}
+
+.chat-list {
+  margin: 0;
+  padding: calc(var(--baseline) * 0.5);
+  list-style-type: none;
+}
+
+.chat-list__item + .chat-list__item {
+  margin-top: calc(var(--baseline) * 0.5);
+}
+
+.form {
+  max-width: 420px;
+  margin: auto;
+}
+
+.form--type-profile {
+  max-width: 800px;
+}
+
+.form--type-profile .form__form {
   display: grid;
-  background: var(--primary);
+  grid-template-columns: 1fr 1fr;
+  grid-gap: var(--baseline);
+}
+
+.form__title {
+  margin-top: 0;
+  margin-bottom: var(--baseline);
+
+  line-height: calc(var(--baseline) * 2);
+  text-align: center;
+}
+
+.form__controls {
+  display: flex;
+  align-items: center;
+  margin-top: var(--baseline);
+  gap: var(--baseline);
+}
+
+.form__button {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.avatar__image {
+  width: calc(var(--baseline) * 5);
+  height: calc(var(--baseline) * 5);
+
+  background-color: var(--light-gray);
+  border-radius: 50%;
+}
+
+.avatar__nickname {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
 }
