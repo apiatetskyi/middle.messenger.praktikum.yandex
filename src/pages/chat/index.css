@@ -1,0 +1,47 @@
+.main {
+  display: flex;
+}
+
+.main__sidebar {
+  position: relative;
+  max-width: 400px;
+  height: 100vh;
+  overflow: hidden;
+
+  background-color: var(--light-gray);
+}
+
+.main__nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  height: calc(var(--baseline) * 3);
+
+  border-top: 1px solid var(--light-gray);
+  border-right: 1px solid var(--light-gray);
+  background-color: var(--white);
+}
+
+.main__chat-list {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.main__content {
+  position: relative;
+  flex-grow: 1;
+}
+
+.main__message {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: calc(var(--baseline) * 0.5);
+  height: calc(var(--baseline) * 3);
+
+  border-top: 1px solid var(--light-gray);
+}

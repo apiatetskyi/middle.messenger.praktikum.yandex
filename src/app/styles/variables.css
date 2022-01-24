@@ -1,0 +1,11 @@
+:root {
+  --primary: #0994ba;
+  --accent: #00c785;
+  --main-text: #333333;
+  --secondary-text: #829398;
+  --light-gray: #f2f2f2;
+  --white: #ffffff;
+
+  --baseline: calc(1rem * 1.5);
+  --primary-shadow: #99b5bd;
+}

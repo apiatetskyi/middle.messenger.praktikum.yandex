@@ -1,0 +1,61 @@
+@import "./normalize";
+@import "./variables";
+
+body {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: var(--main-text);
+}
+
+.navigation {
+  max-width: 600px;
+  margin: auto;
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation-link {
+  font-size: 1.25rem;
+  line-height: var(--baseline);
+  text-decoration: none;
+  color: var(--primary);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.chat-list {
+  margin: 0;
+  padding: calc(var(--baseline) * 0.5);
+  list-style-type: none;
+}
+
+.chat-list__item + .chat-list__item {
+  margin-top: calc(var(--baseline) * 0.5);
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.avatar__image {
+  width: calc(var(--baseline) * 5);
+  height: calc(var(--baseline) * 5);
+
+  background-color: var(--light-gray);
+  border-radius: 50%;
+}
+
+.avatar__nickname {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+}
