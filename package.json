@@ -11,8 +11,8 @@
   },
   "scripts": {
     "dev": "parcel",
-    "build": "rm -rf ./dist && parcel build",
-    "start": "rm -rf ./dist && parcel build && node server.js"
+    "build": "rimraf ./dist && parcel build",
+    "start": "npm run build && node server.js"
   },
   "author": "Aleksey Piatetskyi",
   "license": "ISC",
@@ -20,7 +20,8 @@
     "features": "^0.1.0",
     "parcel": "^2.1.1",
     "postcss": "^8.4.5",
-    "postcss-preset-env": "^7.2.3"
+    "postcss-preset-env": "^7.2.3",
+    "rimraf": "^3.0.2"
   },
   "dependencies": {
     "dotenv": "^11.0.0",
